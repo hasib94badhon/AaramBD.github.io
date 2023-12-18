@@ -1,0 +1,15 @@
+/* Custom CSS for profile.html */
+.profile {
+    margin-bottom: 30px;
+  }
+  
+  /* Styling for the gallery section */
+  #mediaGallery {
+    width: 40%;
+    height: 40%;
+    margin: auto;
+    max-height: fit-content;
+  }
+  
+  /* Additional styles as needed */
+  

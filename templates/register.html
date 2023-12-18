@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .registration-form {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 90%;
+      position: relative;
+    }
+    .registration-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .input-group {
+      margin-bottom: 20px;
+    }
+    .input-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .input-group input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+    }
+    .input-group input[type="submit"]:hover {
+      background-color: #555;
+    }
+    .back-button {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    .back-button a {
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      background-color: #333;
+      color: #fff;
+    }
+    .back-button a:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="registration-form">
+    <div class="back-button">
+      <a href="index.html">Back</a>
+    </div>
+    <h2>Customer Registration</h2>
+    <form action="/" method="post">
+      <div class="input-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="input-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" maxlength="11" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="input-group">
+        <input type="submit" value="register">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
